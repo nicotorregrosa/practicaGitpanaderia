@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbg {
+  background: rgb(66, 109, 70);
+}
+
+.hoverSabores:hover {
+  filter: opacity(50%);
+}
+
+.mainBackground {
+  background: url(/img/font_formule_frances_gris.jpg); /*Toma una imagen como background*/
+  overflow: hidden; /*Oculta el contenido que exceda los límites del contenedor padre*/
+  object-fit: cover; /*Ajusta el contenido para cubrir completamente el área del contenedor sin cambiar su relación de aspecto.*/
+}
+
+#list {
+  list-style-position: inside;
+}
+
+@media all and (max-width: 576px) {
+  .slider-responsive {
+    height: 250px;
+    object-fit: cover; /*Hace que las imagenes se vean proporcionales al tamaño del dispositivo*/
+  }
+}

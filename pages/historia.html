@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de panadería" />
+    <meta name="keywords" content="proyecto,panadería,html,css,bootstrap" />
+    <meta name="author" content="Nicolás Torregrosa" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6e1f0d0254.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Panadería</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbg" data-bs-theme="dark">
+        <!--Aquí arriba se modifica el estilo del navbar, data-bs-theme=dark pone blanca las letras de los elementos-->
+        <div class="container">
+          <!--Aquí arriba se cambió la clase container-fluid por container, la cual crea un contenedor de ancho fijo y centrado-->
+          <a class="navbar-brand" href="/index.html"
+            ><img
+              src="/img/cocu_logo-450.png"
+              alt="Logo panadería"
+              width="120"
+              height="auto"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarpanaderia"
+            aria-controls="navbarpanaderia"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarpanaderia">
+            <!--Se debe cambiar los id por uno propio para que no se note que es copiado de bootstrap-->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--Aquí arriba se modifica la posición de los elementos del navbar-->
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/pages/historia.html"
+                  >Historia</a
+                >
+              </li>
+              <!--Ahora es aquí arriba donde se pone la clase active y aria-current="page" ya que estamos en la página "Historia"-->
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mainBackground">
+      <section class="container my-5">
+        <h1 class="display-2 text-center text-light mb-5">
+          Nuestra historia: nuestros inicios
+        </h1>
+        <article class="row g-0">
+          <!--La clase g-x modifica los espacios entre las columnas de la grilla, si x es 0 las elimina-->
+          <div class="col-sm-12 col-md-6 d-md-none d-lg-block">
+            <!--La clase d-md-none hace que no se muestre el contenido desde md en adelante y d-lg-block hace que si aparesca en dispositivos lg-->
+            <img
+              src="/img/historia.png"
+              alt="Nuestra panadería"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6 bg-light py-2 px-3">
+            <h3 class="text-center">Primeros años</h3>
+            <p class="lead">
+              Hace algunos años, en un pequeño pueblo, nació la panadería "Cocu"
+              con un sueño: deleitar a todos con sus exquisitos dulces y panes
+              artesanales. Desde sus inicios, la panadería se destacó por su
+              pasión por la calidad y autenticidad de sus productos, utilizando
+              recetas familiares transmitidas de generación en generación. Con
+              esfuerzo y dedicación, los primeros años de "Cocu" fueron un
+              desafío, pero también una aventura emocionante. Con el apoyo de la
+              comunidad local y la devoción de un equipo comprometido, la
+              panadería logró ganarse el corazón de sus clientes. Cada mañana,
+              el aroma irresistible del pan recién horneado y la dulzura de sus
+              pasteles atraían a vecinos y visitantes por igual. La pasión por
+              la innovación también llevó a "Cocu" a crear productos únicos y
+              personalizados para ocasiones especiales. Los primeros años de la
+              panadería estuvieron llenos de aprendizajes y crecimiento, y el
+              camino por delante está lleno de nuevas oportunidades para seguir
+              endulzando la vida de todos con sus deliciosos manjares.
+            </p>
+            <!--La clase lead cambia un poco el estilo de letra-->
+          </div>
+          <div class="col-sm-12 col-md-6 bg-light py-2 px-3">
+            <h3 class="text-center">Evolución</h3>
+            <p class="lead">
+              Con el paso del tiempo, la panadería "Cocu" experimentó una
+              emocionante evolución. La demanda de sus productos aumentó
+              significativamente, lo que impulsó la expansión del negocio. Con
+              el objetivo de llegar a más clientes, la panadería abrió nuevas
+              sucursales en diferentes puntos de la ciudad. Además, el equipo
+              creativo de "Cocu" no dejó de innovar y lanzó al mercado una línea
+              de productos saludables, sin gluten y veganos, respondiendo a las
+              necesidades cambiantes de los consumidores. La presencia en redes
+              sociales y el sitio web de la panadería también jugaron un papel
+              fundamental en su crecimiento, conectando con nuevos clientes y
+              consolidando la fidelidad de los habituales. La marca "Cocu" se
+              convirtió en sinónimo de calidad, sabor y tradición, ganando
+              reconocimiento más allá de las fronteras del pueblo. A través de
+              colaboraciones con eventos locales y programas solidarios, la
+              panadería se involucró en la comunidad, transmitiendo sus valores
+              de responsabilidad y compromiso. Con cada logro y desafío
+              superado, "Cocu" se afianzó como un referente en el mundo de la
+              panadería, y su evolución continúa con la promesa de seguir
+              endulzando los corazones de quienes prueban sus delicias.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 d-md-none d-lg-block">
+            <img src="/img/historia2.jpg" alt="Historia" class="img-fluid" />
+          </div>
+        </article>
+        <div class="col-sm-12 col-md-12 col-lg-6 bg-light py-2 px-3">
+          <h3 class="text-center">Presente</h3>
+          <p class="lead">
+            En la actualidad, la panadería "Cocu" sigue floreciendo con una
+            presencia sólida en el mercado. Gracias a su enfoque en la calidad,
+            creatividad y atención al cliente, ha logrado mantener su reputación
+            impecable. La tecnología ha sido un aliado estratégico para "Cocu",
+            facilitando el proceso de pedidos en línea y la entrega a domicilio,
+            adaptándose a las necesidades de una sociedad cada vez más
+            digitalizada. Además, la panadería ha ampliado su oferta con una
+            variada selección de productos de panadería y pastelería,
+            manteniendo siempre su sello distintivo de frescura y sabor
+            inigualables. La responsabilidad ambiental también es una prioridad,
+            con prácticas sostenibles que buscan minimizar el impacto en el
+            medio ambiente. La comunidad sigue siendo el pilar de "Cocu", y la
+            participación en eventos locales y campañas solidarias continúa
+            fortaleciendo su vínculo con los clientes. Con la vista puesta en el
+            futuro, "Cocu" sigue enfocada en la innovación y la excelencia, con
+            el firme propósito de seguir conquistando paladares y endulzando la
+            vida de todos los que entran por su puerta.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="navbg">
+      <section class="container text-light">
+        <article class="row">
+          <div class="text-center col-sm-12 col-md-4">
+            <figure>
+              <!--Se usa figure para que el logo solo sea una figura, si se quiere hacer que el logo sea un link, se debe usar la etiqueta <a> -->
+              <img
+                src="/img/cocu_logo-450.png"
+                alt="Logo panadería"
+                width="225"
+                height="auto"
+              />
+            </figure>
+          </div>
+          <div class="my-5 col-sm-12 col-md-4">
+            <p class="fw-bold text-center">Horarios de atención:</p>
+            <ul id="list">
+              <li>Lunes a viernes: 9hs a 18hs</li>
+              <li>Sábados, domingos y feriados: 9hs a 14hs</li>
+            </ul>
+          </div>
+          <div class="text-center my-5 col-sm-12 col-md-4">
+            <h4 class="fs-6 mb-4">Síguenos en nuestras redes:</h4>
+            <!--fs-6 cambia el tamaño de la letra-->
+            <a
+              href="http://www.facebook.com/nicotorregrosa/"
+              target="_blank"
+              class="text-primary mx-2"
+              ><i class="fa-brands fa-facebook fa-2x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/nicol%C3%A1s-torregrosa-81445b270/"
+              target="_blank"
+              class="text-primary-emphasis mx-2"
+            >
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="text-danger mx-2"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

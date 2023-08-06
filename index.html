@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de panadería" />
+    <meta name="keywords" content="proyecto,panadería,html,css,bootstrap" />
+    <meta name="author" content="Nicolás Torregrosa" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6e1f0d0254.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Panadería</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbg" data-bs-theme="dark">
+        <!--Aquí arriba se modifica el estilo del navbar, data-bs-theme=dark pone blanca las letras de los elementos-->
+        <div class="container">
+          <!--Aquí arriba se cambió la clase container-fluid por container, la cual crea un contenedor de ancho fijo y centrado-->
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="img/cocu_logo-450.png"
+              alt="Logo panadería"
+              width="120"
+              height="auto"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarpanaderia"
+            aria-controls="navbarpanaderia"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarpanaderia">
+            <!--Se debe cambiar los id por uno propio para que no se note que es copiado de bootstrap-->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--Aquí arriba se modifica la posición de los elementos del navbar-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+                <!--Arriba se pone la clase active que linkea a la misma página en la que se está-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div id="sliderPrincipal" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#sliderPrincipal"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#sliderPrincipal"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#sliderPrincipal"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/slider_201603_lemonpie.jpg"
+                class="d-block w-100 slider-responsive"
+                alt="lemonpie"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/slider_201603_painchoco.jpg"
+                class="d-block w-100 slider-responsive"
+                alt="painchoco"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/slider_201603_sandwich.jpg"
+                class="d-block w-100 slider-responsive"
+                alt="sandwich"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#sliderPrincipal"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#sliderPrincipal"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="bg-light py-5 text-center">
+        <article class="container">
+          <h1 class="display-2 mb-4">Sobre nosotros</h1>
+          <!--display cambia el tamaño y tipo de letra-->
+          <p>
+            "Cocu" es una exquisita panadería ficticia que te invita a
+            sumergirte en un mundo de sabores irresistibles. Con un ambiente
+            cálido y acogedor, nuestro lugar se convierte en un oasis para los
+            amantes del pan y los dulces. Ofrecemos una amplia variedad de
+            productos recién horneados, desde panes artesanales con ingredientes
+            de primera calidad hasta deliciosos pasteles y galletas que
+            deleitarán tu paladar.
+          </p>
+          <p>
+            En "Cocu," la calidad es nuestra máxima prioridad. Nuestros
+            panaderos expertos combinan tradición y creatividad para brindarte
+            una experiencia única y deliciosa en cada bocado. Desde los clásicos
+            hasta creaciones innovadoras, cada producto está elaborado con
+            pasión y dedicación.
+          </p>
+          <p>
+            Además, nos enorgullece ofrecer opciones para diferentes
+            preferencias alimenticias, como panes sin gluten y opciones veganas.
+            Nuestra panadería también es un punto de encuentro para la
+            comunidad, donde amigos y familiares pueden compartir momentos
+            especiales alrededor de una mesa repleta de manjares.
+          </p>
+          <p>
+            En "Cocu," el amor por la panadería se combina con la calidez de
+            nuestro equipo para brindarte una experiencia gastronómica
+            inolvidable. Te esperamos para compartir el placer de los sabores
+            auténticos en cada rincón de nuestro encantador establecimiento.
+            ¡Bienvenido a "Cocu"!
+          </p>
+        </article>
+      </section>
+      <section class="container my-4">
+        <article class="row text-center shadow">
+          <!--La clase row es para insertar el sistema de grillas, shadow es para darle efecto sombra-->
+          <div class="col-sm-12 col-md-4">
+            <div class="card border border-0">
+              <!--En el div de arriba, había un Style después de la clase Card, a estos siempre se los debe borrar en caso de que vengan en un código de Bootstrap, luego se usa border border-x para modificar el borde-->
+              <i class="fa-regular fa-thumbs-up fa-3x text-primary"></i>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card border border-0">
+              <i class="fa-regular fa-thumbs-up fa-3x text-primary"></i>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card border border-0">
+              <i class="fa-regular fa-thumbs-up fa-3x text-primary"></i>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-5 text-center row">
+          <h2 class="display-4">Prueba nuestros sabores</h2>
+          <p>
+            "Deliciosos dulces artesanales, sabores únicos y frescos.
+            ¡Satisfacción garantizada! Prueba nuestros dulces y disfruta un
+            momento dulce y especial."
+          </p>
+          <div class="col-sm-12 col-md-4">
+            <a href="/pages/productos.html"
+              ><img
+                src="img/dulce.png"
+                alt="Sabores dulces"
+                class="img-fluid hoverSabores"
+            /></a>
+            <!--img-fluid es para hacer a la imágen responsive-->
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a href="/pages/productos.html"
+              ><img
+                src="img/salado.png"
+                alt="Sabores salados"
+                class="img-fluid hoverSabores"
+            /></a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a href="/pages/productos.html"
+              ><img
+                src="img/panyfactura.png"
+                alt="Panes y facturas"
+                class="img-fluid hoverSabores"
+            /></a>
+          </div>
+        </article>
+        <article class="text-center my-5">
+          <h3 class="display-5">Nuestra tradición</h3>
+          <p>
+            Aquí un video en donde mostramos toda nuestra tradición e historia
+            con nuestros productos y clientes a lo largo de los años.
+          </p>
+          <iframe
+            class="w-100 shadow"
+            height="315"
+            src="https://www.youtube.com/embed/c2vwDCvcOFA?si=bMGLUfNhGSZbFDHs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <!--La clase w-100 hace que sea responsive-->
+        </article>
+      </section>
+    </main>
+
+    <footer class="navbg">
+      <section class="container text-light">
+        <article class="row">
+          <div class="text-center col-sm-12 col-md-4">
+            <figure>
+              <!--Se usa figure para que el logo solo sea una figura, si se quiere hacer que el logo sea un link, se debe usar la etiqueta <a> -->
+              <img
+                src="img/cocu_logo-450.png"
+                alt="Logo panadería"
+                width="225"
+                height="auto"
+              />
+            </figure>
+          </div>
+          <div class="my-5 col-sm-12 col-md-4">
+            <p class="fw-bold text-center">Horarios de atención:</p>
+            <ul id="list">
+              <li>Lunes a viernes: 9hs a 18hs</li>
+              <li>Sábados, domingos y feriados: 9hs a 14hs</li>
+            </ul>
+          </div>
+          <div class="text-center my-5 col-sm-12 col-md-4">
+            <h4 class="fs-6 mb-4">Síguenos en nuestras redes:</h4>
+            <!--fs-6 cambia el tamaño de la letra-->
+            <a
+              href="http://www.facebook.com/nicotorregrosa/"
+              target="_blank"
+              class="text-primary mx-2"
+              ><i class="fa-brands fa-facebook fa-2x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/nicol%C3%A1s-torregrosa-81445b270/"
+              target="_blank"
+              class="text-primary-emphasis mx-2"
+            >
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="text-danger mx-2"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

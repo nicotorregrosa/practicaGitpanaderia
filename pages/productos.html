@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de panadería" />
+    <meta name="keywords" content="proyecto,panadería,html,css,bootstrap" />
+    <meta name="author" content="Nicolás Torregrosa" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6e1f0d0254.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Panadería</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbg" data-bs-theme="dark">
+        <!--Aquí arriba se modifica el estilo del navbar, data-bs-theme=dark pone blanca las letras de los elementos-->
+        <div class="container">
+          <!--Aquí arriba se cambió la clase container-fluid por container, la cual crea un contenedor de ancho fijo y centrado-->
+          <a class="navbar-brand" href="/index.html"
+            ><img
+              src="/img/cocu_logo-450.png"
+              alt="Logo panadería"
+              width="120"
+              height="auto"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarpanaderia"
+            aria-controls="navbarpanaderia"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarpanaderia">
+            <!--Se debe cambiar los id por uno propio para que no se note que es copiado de bootstrap-->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--Aquí arriba se modifica la posición de los elementos del navbar-->
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/pages/productos.html"
+                  >Productos</a
+                >
+                <!--Ahora es aquí arriba donde se pone la clase active y aria-current="page" ya que estamos en la página "Productos"-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <nav aria-label="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Productos
+            </li>
+          </ol>
+        </div>
+      </nav>
+      <!--El nav breadcrumb es otro tipo de nav que sirve para no depender siempre del mismo navbar-->
+      <section class="container my-5">
+        <h2 class="display-2 text-center">Galería de productos</h2>
+        <p class="text-center">
+          Aquí nuestra galería con nuestros mejores y mas esquisitos productos,
+          déjate llevar por el placer y elige el que más te guste.
+        </p>
+        <hr />
+        <article class="row">
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="pan Brioche"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan Brioche</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Croissant_00018_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="Croissant"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Croissant</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Torta-de-chocolate_00098_portfolio.jpg"
+                class="card-img-top img-fluid"
+                alt="Torta"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Torta de chocolate</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Eclair_00118_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="Eclair"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Eclair</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="pan Brioche"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan Brioche</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="pan Brioche"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan Brioche</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="pan Brioche"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan Brioche</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="pan Brioche"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan Brioche</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="pan Brioche"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan Brioche</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="pan Brioche"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan Brioche</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="pan Brioche"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan Brioche</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card mb-3">
+              <img
+                src="/img/productos/Brioche-larga-oscura_00059_portfolio1.jpg"
+                class="card-img-top img-fluid"
+                alt="pan Brioche"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan Brioche</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="/pages/detalleProducto.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Modal: es buena práctica ponerlo entre el Main y el Footer-->
+    <div
+      class="modal fade"
+      id="modalProducto"
+      tabindex="-1"
+      aria-labelledby="modalProductoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalProductoLabel">Croissant</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="/img/productos/Croissant_00018_portfolio1.jpg"
+              alt="Croissant"
+              class="img-fluid w-100"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="navbg">
+      <section class="container text-light">
+        <article class="row">
+          <div class="text-center col-sm-12 col-md-4">
+            <figure>
+              <!--Se usa figure para que el logo solo sea una figura, si se quiere hacer que el logo sea un link, se debe usar la etiqueta <a> -->
+              <img
+                src="/img/cocu_logo-450.png"
+                alt="Logo panadería"
+                width="225"
+                height="auto"
+              />
+            </figure>
+          </div>
+          <div class="my-5 col-sm-12 col-md-4">
+            <p class="fw-bold text-center">Horarios de atención:</p>
+            <ul id="list">
+              <li>Lunes a viernes: 9hs a 18hs</li>
+              <li>Sábados, domingos y feriados: 9hs a 14hs</li>
+            </ul>
+          </div>
+          <div class="text-center my-5 col-sm-12 col-md-4">
+            <h4 class="fs-6 mb-4">Síguenos en nuestras redes:</h4>
+            <!--fs-6 cambia el tamaño de la letra-->
+            <a
+              href="http://www.facebook.com/nicotorregrosa/"
+              target="_blank"
+              class="text-primary mx-2"
+              ><i class="fa-brands fa-facebook fa-2x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/nicol%C3%A1s-torregrosa-81445b270/"
+              target="_blank"
+              class="text-primary-emphasis mx-2"
+            >
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="text-danger mx-2"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
